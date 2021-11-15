@@ -1,0 +1,19 @@
+#app{
+    height: 100vh;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: tomato;
+}
+
+.orange{
+    color: orange;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
