@@ -7,6 +7,7 @@ const app = new Vue({
 			img: 'https://cryptologos.cc/logos/bitcoin-btc-logo.png',
 			changePercent: 0,
 			color: 'f4f4f4',
+			value: 0,
 			
 			price: 8400,
 
@@ -27,6 +28,13 @@ const app = new Vue({
 	computed: {
 		title(){
 			return `${this.name} - ${this.symbol}`
+		},
+		convertedValue(){
+			if(!this.value){
+				return 0;
+			}
+
+			return this.value / this.price
 		}
 	},
 
