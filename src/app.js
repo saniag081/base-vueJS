@@ -103,16 +103,23 @@ const app = new Vue({
 		}
 	},
 
+	created(){
+		console.log('created...')
+	},
+
+	mounted(){
+		console.log('mounted...')
+	},
+	
+	methods: {
+		updateColor(color){
+			this.color = color;
+		}
+	},
 	// watch: {
 	// 	showPrices(newValue, oldValue){
 	// 		console.log(newValue);
 	// 		console.log(oldValue)
 	// 	}
 	// },
-
-	methods: {
-		updateColor(color){
-			this.color = color;
-		}
-	}
 })
